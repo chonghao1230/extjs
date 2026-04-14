@@ -1,1 +1,1 @@
-# Extjs
+# Extjs GPL

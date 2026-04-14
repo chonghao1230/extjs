@@ -57,3 +57,31 @@ http://cdn.sencha.com/ext/gpl/ext-7.0.0-gpl.zip
 https://cdn.sencha.com/cmd/7.0.0.40/jre/SenchaCmd-7.0.0.40-windows-64bit.zip
 https://cdn.sencha.com/cmd/7.0.0.40/no-jre/SenchaCmd-7.0.0.40-linux-amd64.sh.zip
 ```
+## Sencha CMD
+```
+C:\Windows\System32>cd /d C:/extjs
+
+# 指向你的 SDK 路徑，並初始化當前目錄為 workspace
+# sencha -sdk C:\path\to\your\ext-sdk generate workspace .
+
+sencha -sdk C:/extjs/ext-7.0.0 generate workspace .
+
+# 語法：sencha -sdk [SDK路徑] generate app [App名稱] [App存放路徑]
+# sencha -sdk C:\path\to\your\ext-sdk generate app MyApp ./MyApp
+
+C:\extjs>sencha -sdk C:/extjs/ext-7.0.0 generate app MyApp ./MyApp
+
+cd MyApp
+sencha app refresh
+sencha app watch
+```
+
+## dev.bat
+```
+@echo off
+title Sencha Watch - MyApp
+cd /d C:\extjs\MyApp
+echo 正在啟動 Sencha App Watch...
+sencha app watch
+pause
+```

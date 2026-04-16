@@ -76,7 +76,7 @@ sencha app refresh
 sencha app watch
 ```
 
-## dev.bat
+## Sencha App Watch dev.bat
 ```
 @echo off
 title Sencha Watch - MyApp
